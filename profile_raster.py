@@ -242,28 +242,4 @@ def batch_main_raster(in_rasters, in_lines, save_folder, res, NO_DATA, batch=Tru
         i=i+1
 
 
-    
-    
 
-in_rasters = [r'C:\MarkLundineSurface\CapeHenlopenLiDAR\cape_henlopen_lidar_1m.tif',
-              r'C:\MarkLundineSurface\CapeHenlopenLiDAR\cape_henlopen_lidar_plus1.tif',
-              r'C:\MarkLundineSurface\CapeHenlopenLiDAR\cape_henlopen_lidar_minus1.tif']
-    
-##main_raster(in_rasters,
-##            r'C:\MarkLundineSurface\CapeHenlopenLiDAR\test_transect.shp',
-##            r'C:\MarkLundineSurface\CapeHenlopenLiDAR\test_multiple',
-##            1,
-##            -9999,
-##            batch=False)
-##
-batch_main_raster(in_rasters,
-                  r'C:\MarkLundineSurface\CapeHenlopenLiDAR\cape_shoreline_transects_100m.shp',
-                  r'C:\MarkLundineSurface\CapeHenlopenLiDAR\test_both_multiple',
-                  1,
-                  -9999,
-                  batch=True)
-##batch_main(r'C:\MarkLundineSurface\CapeHenlopenLiDAR\cape_henlopen_lidar_1m.tif',
-##     r'C:\MarkLundineSurface\CapeHenlopenLiDAR\cape_shoreline_transects_100m.shp',
-##     r'C:\MarkLundineSurface\CapeHenlopenLiDAR\test_transects',
-##     1,
-##     -9999)
