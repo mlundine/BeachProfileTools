@@ -19,6 +19,7 @@ Currently there are three modules that can be imported (import .... as ....).
 	import dem_to_shoreline as dts
 
 	dts.lidar_dem_to_shoreline(dem_path, contour_path, shoreline_path, no_data_value=-9999, filter_extra=False)
+	"""
 	Uses gdal to take a raster DEM (.tif, .img, Esri grids, etc.)
     	and generate contours. Then extracts the 0 contour as the shoreline.
     	If data includes areas that have low spots other than the shore
@@ -29,7 +30,7 @@ Currently there are three modules that can be imported (import .... as ....).
     	shoreline_path: path to save the 0 contour to, end with .shp (str)
     	no_data_value (optional, default=-9999): the no data value for the raster 
     	filter_extra (optional, default=False): If set to True, will only save the longest 0 contour to the shoreline file
-	
+	"""
 
 # generating_transects
 
