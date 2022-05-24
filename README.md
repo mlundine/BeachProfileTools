@@ -16,7 +16,7 @@ Currently there are three modules that can be imported (import .... as ....).
 
 # dem_to_shoreline
 
-![shoreline](/images/shoreline.jpg)
+![shoreline](/images/shoreline.JPG)
 
 	import dem_to_shoreline as dts
 
@@ -36,7 +36,7 @@ Currently there are three modules that can be imported (import .... as ....).
 
 # generating_transects
 
-![shoreline](/images/transects.jpg)
+![transects](/images/transects.JPG)
 
 	import generating_transects as gen_tr
 	
