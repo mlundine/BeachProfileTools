@@ -20,7 +20,11 @@ Currently there are three modules that can be imported (import .... as ....).
 
 	import dem_to_shoreline as dts
 
-	dts.lidar_dem_to_shoreline(dem_path, contour_path, shoreline_path, no_data_value=-9999, filter_extra=False)
+	dts.lidar_dem_to_shoreline(dem_path, 
+				   contour_path, 
+			           shoreline_path, 
+				   no_data_value=-9999, 
+				   filter_extra=False):
 	"""
 	Uses gdal to take a raster DEM (.tif, .img, Esri grids, etc.)
     	and generate contours. Then extracts the 0 contour as the shoreline.
