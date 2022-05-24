@@ -16,6 +16,8 @@ Currently there are three modules that can be imported (import .... as ....).
 
 # dem_to_shoreline
 
+![shoreline](/images/shoreline.jpg)
+
 	import dem_to_shoreline as dts
 
 	dts.lidar_dem_to_shoreline(dem_path, contour_path, shoreline_path, no_data_value=-9999, filter_extra=False)
@@ -34,6 +36,8 @@ Currently there are three modules that can be imported (import .... as ....).
 
 # generating_transects
 
+![shoreline](/images/transects.jpg)
+
 	import generating_transects as gen_tr
 	
 	gen_tr.make_transects(input_path,
@@ -49,6 +53,8 @@ Currently there are three modules that can be imported (import .... as ....).
     	output_path: path to output shapefile containing transects
 
 # profile_raster
+
+![profile](/images/profiles.png)
 
 	import profile_raster
 
