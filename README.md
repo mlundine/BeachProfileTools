@@ -119,7 +119,9 @@ The intersection points between each shoreline and the transect are computed. Th
 
 The earliest time shoreline intersection point is taken as the origin.
 
-Outputs a figure of the timeseries and a csv with the data (time, eastings, northings, cross-shore distance (m))
+Outputs a figure of the timeseries and a csv with the data (time, eastings, northings, cross-shore distance).
+
+Shown below is some fake data for Cape Henlopen:
 
 ![example_transects](/images/transects2.JPG)
 
