@@ -108,3 +108,70 @@ Currently there are three modules that can be imported (import .... as ....).
     	N0_DATA: raster no data value
     	batch (optional): this should stay as False if just one profile is taken, use batch_main function for multiple profiles
     	"""
+
+# shoreline_timeseries
+
+This module generates timeseries data and figures for shoreline change.
+
+You need a shapefile with timestamped shorelines and a shapefile with one or multiple transects (for multiple, use the batch function).
+
+The intersection points between each shoreline and the transect are computed. Then the cross-shore distance for each point is computed.
+
+The earliest time shoreline intersection point is taken as the origin.
+
+Outputs a figure of the timeseries and a csv with the data (time, eastings, northings, cross-shore distance (m))
+
+![example_transects](/images/transects2.JPG)
+
+![example_timeseries](/images/capehenlopen_2.png)
+
+Batch function will output data and a figure for multiple transects.
+
+![batch](/images/files.JPG)
+
+	import shoreline_timeseries as sts
+
+	sts.transect_timeseries(shoreline_shapefile,
+                        transect_shapefile,
+                        sitename,
+                        transect_id,
+                        output_folder,
+                        switch_dir=False,
+                        batch=False):
+    	"""
+    	Generates timeseries of shoreline cross-shore position
+    	given a shapefile containing shorelines and a shapefile containing
+    	a cross-shore transect. Computes interesection points between shorelines
+    	and transect. Uses earliest shoreline intersection point as origin.
+    
+    	inputs:
+    	shoreline_shapefile (str): path to shapefile containing shorelines
+                               	   (needs a field 'datetime' YYYY-MM-DD-HH-MM)
+    	transect_shapefile (str): path to shapefile containing cross-shore transect
+    	sitename (str): name of site
+    	transect_id (int): integer id for transect
+    	output_folder (str): path to save csv and png figure to
+    	switch_dir (optional): default is False, set to True if transects are in the opposite direction
+    	batch (optional): default is False, this gets set to True when batch function is used
+    	"""
+
+	sts.batch_transect_timeseries(shorelines,
+                              	  transects,
+                              	  sitename,
+                                  output_folder,
+                                  switch_dir=False):
+    	"""
+    	Generates timeseries of shoreline cross-shore position
+    	given a shapefile containing shorelines and a shapefile containing
+    	cross-shore transects. Computes interesection points between shorelines
+    	and transects. Uses earliest shoreline intersection point as origin.
+    
+    	inputs:
+    	shoreline_shapefile (str): path to shapefile containing shorelines
+                               	   (needs a field 'datetime' YYYY-MM-DD-HH-MM)
+    	transect_shapefile (str): path to shapefile containing cross-shore transects
+    	sitename (str): name of site
+    	output_folder (str): path to save csvs and png figures to
+    	switch_dir (optional): default is False, set to True if transects are in the opposite direction
+    	"""
+	
