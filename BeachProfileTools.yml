@@ -1,4 +1,4 @@
-name: pockmark_detection
+name: beachprofiletools
 channels:
   - defaults
 dependencies:
